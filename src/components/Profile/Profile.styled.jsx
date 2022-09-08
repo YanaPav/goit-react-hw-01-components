@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const User = styled.div`
-    width: 800px;
+    width: 400px;
     background-color: white;
     text-align: center;
     padding-top: 60px;
@@ -12,11 +12,12 @@ export const User = styled.div`
     }
     .name {
         font-weight: bold;
-        font-size: 50px;
+        font-size: 30px;
     }
     .tag, 
     .location {
         color: gray;
+        font-size: 20px;
     }
 
     .stats {
@@ -27,7 +28,7 @@ export const User = styled.div`
         li {
             list-style: none;
             width: calc(100%/3);
-            height: 140px;
+            height: 100px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -37,11 +38,11 @@ export const User = styled.div`
 
         .label {
             color: gray;
-            font-size: 30px;
+            font-size: 20px;
         }
 
         .quantity {
-            font-size: 30px;
+            font-size: 20px;
             font-weight: bold;
         }
     }
