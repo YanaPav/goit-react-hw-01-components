@@ -1,4 +1,5 @@
-import {User} from './Profile.styled'
+import PropTypes from "prop-types"
+import { User } from './Profile.styled'
 
 export const Profile = props => {
     const { username, tag, location, avatar } = props
@@ -30,4 +31,17 @@ export const Profile = props => {
                     </li>
                 </ul>
             </User>
+}
+
+Profile.propTypes = {
+    avatar: PropTypes.string.isRequired,
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    stat: PropTypes.shape({
+        followers: PropTypes.number.isRequired,
+        views: PropTypes.number.isRequired,
+        likes: PropTypes.number.isRequired
+    })
+    
 }

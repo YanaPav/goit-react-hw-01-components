@@ -24,6 +24,7 @@ export const User = styled.div`
         display: flex;
         background-color: #DFEDE8;
         padding: 0;
+        margin: 0;
 
         li {
             list-style: none;
