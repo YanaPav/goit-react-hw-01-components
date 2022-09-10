@@ -1,11 +1,13 @@
 import styled from "styled-components"
 
 export const Friend = styled.li`
+    padding: 0 10px;
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: start;
     gap: 14px;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 12%), 0 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgb(0 0 0 / 16%);;
 `
 export const Status = styled.span`
     display: block;
@@ -17,10 +19,9 @@ export const Status = styled.span`
 export const Name = styled.p`
     font-size: 20px;
 `
-export const Friends = styled.ul`
-    width: 390px;
+export const AllFriends = styled.ul`
+    width: 380px;
     background-color: #fff;
-    padding-left: 20px;
-    padding-top: 20px;
+    padding: 20px 10px;
     margin: 0;
 `
